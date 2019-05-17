@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import Sidebar from '../components/Sidebar/Sidebar';
 
 type Props = {
   children: React.Node
@@ -10,6 +11,11 @@ export default class App extends React.Component<Props> {
 
   render() {
     const { children } = this.props;
-    return <React.Fragment>{children}</React.Fragment>;
+    return <div>
+      <Sidebar />
+      <React.Fragment>
+        {children}
+      </React.Fragment>
+    </div>
   }
 }
