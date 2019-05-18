@@ -1,6 +1,7 @@
 .background {
   height: 100%;
   outline: none;
+  position: relative !important;
   transform: none !important;
 }
 
@@ -9,7 +10,9 @@
   padding: 20px;
 }
 
-.background .listItem a {
+.background .listItem {
+  align-items: center;
   color: #000000;
-  font-size: 1rem;
+  display: flex;
+  padding: 5px;
 }

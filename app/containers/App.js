@@ -11,11 +11,13 @@ export default class App extends React.Component<Props> {
 
   render() {
     const { children } = this.props;
-    return <div>
+    return <div style={{display: 'flex'}}>
       <Sidebar />
-      <React.Fragment>
-        {children}
-      </React.Fragment>
+      <div style={{backgroundColor: '#ffffff', width: 'calc(100vh)'}}>
+        <React.Fragment>
+          {children}
+        </React.Fragment>
+      </div>
     </div>
   }
 }

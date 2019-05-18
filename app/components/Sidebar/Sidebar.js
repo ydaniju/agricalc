@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { Rnd, ResizeEnable } from 'react-rnd';
 
 import styles from './Sidebar.css';
+import Caret from '../svg/Caret';
 
 const enableResizing: ResizeEnable = {
   bottom: false,
@@ -31,9 +32,20 @@ export default class Sidebar extends Component {
         enableResizing={enableResizing}
       >
         <ul className={styles.list}>
-          <li className={styles.listItem}><a>Power</a></li>
-          <li className={styles.listItem}><a>Soil and Water</a></li>
-          <li className={styles.listItem}><a>Farm Structures and Buildings</a></li>
+          <li className={styles.listItem}>
+            <Caret />
+            <div>Power</div>
+          </li>
+
+          <li className={styles.listItem}>
+            <Caret />
+            <div>Soil and Water</div>
+          </li>
+
+          <li className={styles.listItem}>
+            <Caret />
+            <div>Farm Structures and Buildings</div>
+          </li>
         </ul>
       </Rnd>
     )
