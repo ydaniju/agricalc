@@ -24,7 +24,7 @@ export default class Sidebar extends Component {
         default={{
           x: 0,
           y: 0,
-          width: 320,
+          width: 250,
           height: '100%',
         }}
         disableDragging
