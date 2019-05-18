@@ -25,7 +25,7 @@ export default class Sidebar extends Component {
           x: 0,
           y: 0,
           width: 320,
-          height: 200,
+          height: '100%',
         }}
         disableDragging
         enableResizing={enableResizing}
